@@ -36,8 +36,8 @@
 
 ## Schema setup fizic
 
-![PRIMA POZA](/assets/IMG_7860.HEIC)
-![A DOUA POZA](/assets/IMG_7861.HEIC)
+![PRIMA POZA](https://drive.google.com/file/d/1Tdl-SUmc9GdQpKzfQflU450UmMDEgLCX/view?usp=drive_link)
+![A DOUA POZA](https://drive.google.com/file/d/1uMUeX_PArDzQObgunef8zAoydCBzRS6Q/view?usp=drive_link)
 
 ## Video functionare
 
@@ -45,4 +45,4 @@
 
 ## SCHEMA BREADBOARD WOWKI
 
-![SCHEMA SETUP FIZIC](/assets/schema.png)
+(https://drive.google.com/file/d/1i-aLujHpOjXLMXYoDx_9pQO6ry_SqllA/view?usp=drive_link)
