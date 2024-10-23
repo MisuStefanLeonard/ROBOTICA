@@ -1,48 +1,35 @@
 ## TEMA LABORATOR 1 ROBOTICA
 
-#### Am avut de simulat o statie de incarcare. Atunci cand statia nu este ocupata , aceasta va semnala ca este libera(printr-ul LED RGB) in culoare verde. Cand statia este in proces de incarcare , LED-UL RGB se face ROSU , iar statia inseamna ca este ocupata. Procesul de incarcare este definit prin 4 LED-uri (2 de culoare albastra si 2 de culoare galbena) . Incarcarea va porni atunci cand vom apasa pe un buton in acest fel:
+#### Am avut de simulat o stație de încărcare. Atunci când stația nu este ocupată, aceasta va semnala că este liberă (prin LED-ul RGB) prin culoarea verde. Când stația este în proces de încărcare, LED-ul RGB se face roșu, iar stația este ocupată. Procesul de încărcare este definit prin 4 LED-uri (2 de culoare albastră și 2 de culoare galbenă). Încărcarea va porni atunci când vom apăsa pe un buton astfel:
 
-#### - Culoare LED-ului RGB va fi ROSIE cat timp statia este in incarcare.
+- LED-ul RGB va fi roșu cât timp stația este în încărcare.
+- Primul LED va licări de 3 ori, la un interval de 750 ms. După ce a palpit de 3 ori, acesta va rămâne aprins.
+- Procesul se va repeta pentru celelalte 3 LED-uri, iar la final, când stația este încărcată, toate cele 4 LED-uri vor palpita încă 3 ori simultan, iar apoi stația se va elibera (LED-ul RGB devine verde).
+- De asemenea, un al doilea buton poate opri procesul de încărcare.
+- Butonul de stop trebuie apăsat mai mult de 1 secundă pentru a opri procesul de încărcare.
+- Dacă butonul este apăsat, animatia de încărcare se anulează, și toate cele 4 LED-uri vor palpita simultan de 3 ori.
 
-#### - Primul LED v-a licari de 3 ori la un delay de 750 ms , iar cand acesta a palpait de 3 ori, el va ramane aprins .
+## Componente utilizate:
 
-#### - Procesul se va repeta pentru celelalte 3 , iar la final can statia este incarcata , toate cele 4 LED-uri vor palpaii de inca 3 ori , iar atunci statia se va elibera (prin culoare VERDE).
+- 1x Placă Half-Breadboard
+- 1x Placă Arduino UNO
+- 14x Fire de legătură
+- 2x LED albastru
+- 2x LED galben
+- 7x Rezistență de 220 ohm
+- 2x Rezistență de 1 kOhm
+- 2x Buton de tip push-button de 6mm
+- 1x LED RGB
 
-#### - De asemenea , vom mai folosi un buton , prin care vom putea oprii procesul de incarcare.
+## Schema setup fizic:
 
-#### - Acesta trebuie sa fie apasat mai mult de 1 secunda pentru ca procesul de incarcare sa fie oprit.
+- ![Link la schema setup fizic](https://drive.google.com/file/d/1Tdl-SUmc9GdQpKzfQflU450UmMDEgLCX/view?usp=drive_link)
+- ![Link alternativ la schema setup fizic](https://drive.google.com/file/d/1uMUeX_PArDzQObgunef8zAoydCBzRS6Q/view?usp=drive_link)
 
-#### - Cand butonul va fi apasat , animatia enumerata mai sus prin aprinderea succesiva si palpairea LED-urilor va fi anulata , si se va trece direct la aprinderea celor 4 LED-uri simultan , prin palpairea de 3 ori simultan.
+## Video funcționare:
 
-## Commponente utilizate
+- [Link către video](https://youtube.com/shorts/gYVs_Wss-xI?feature=share)
 
-#### 1x PLACA HALF-BREADBOARD
+## Schema breadboard Wowki:
 
-#### 1X PLACA Arduino UNO
-
-#### 14x FIRE DE LEGATURA
-
-#### 2x LED ALBASTRU
-
-#### 2x LED GALBEN
-
-#### 7x rezistenta 220 ohm
-
-#### 2x rezistenta 1 kOhm
-
-#### 2x push-button 6mm
-
-#### 1x LED RGB
-
-## Schema setup fizic
-
-#### !(https://drive.google.com/file/d/1Tdl-SUmc9GdQpKzfQflU450UmMDEgLCX/view?usp=drive_link)
-#### !(https://drive.google.com/file/d/1uMUeX_PArDzQObgunef8zAoydCBzRS6Q/view?usp=drive_link)
-
-## Video functionare
-
-#### LINK : https://youtube.com/shorts/gYVs_Wss-xI?feature=share
-
-## SCHEMA BREADBOARD WOWKI
-
-!(https://drive.google.com/file/d/1i-aLujHpOjXLMXYoDx_9pQO6ry_SqllA/view?usp=drive_link)
+- ![Link către schema breadboard](https://drive.google.com/file/d/1i-aLujHpOjXLMXYoDx_9pQO6ry_SqllA/view?usp=drive_link)
