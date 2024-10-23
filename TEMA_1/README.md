@@ -23,8 +23,8 @@
 
 ## Schema setup fizic:
 
-- ![Link la schema setup fizic](https://drive.google.com/file/d/1Tdl-SUmc9GdQpKzfQflU450UmMDEgLCX/view?usp=drive_link)
-- ![Link alternativ la schema setup fizic](https://drive.google.com/file/d/1uMUeX_PArDzQObgunef8zAoydCBzRS6Q/view?usp=drive_link)
+- (https://drive.google.com/file/d/1Tdl-SUmc9GdQpKzfQflU450UmMDEgLCX/view?usp=drive_link)
+- (https://drive.google.com/file/d/1uMUeX_PArDzQObgunef8zAoydCBzRS6Q/view?usp=drive_link)
 
 ## Video funcționare:
 
@@ -32,4 +32,4 @@
 
 ## Schema breadboard Wowki:
 
-- ![Link către schema breadboard](https://drive.google.com/file/d/1i-aLujHpOjXLMXYoDx_9pQO6ry_SqllA/view?usp=drive_link)
+- (https://drive.google.com/file/d/1i-aLujHpOjXLMXYoDx_9pQO6ry_SqllA/view?usp=drive_link)
