@@ -35,11 +35,12 @@
 ### 1x LED RGB
 
 ## Schema setup fizic
-/Users/misustefan/Desktop/ROBOTICA/TEMA_1/assets/IMG_7860.HEIC
-/Users/misustefan/Desktop/ROBOTICA/TEMA_1/assets/IMG_7861.HEIC
+![PRIMA POZA](/assets/IMG_7860.HEIC)
+![A DOUA POZA](/assets/IMG_7861.HEIC)
+
 ## Video functionare
 
 ### LINK : https://youtube.com/shorts/gYVs_Wss-xI?feature=share
 
 ## SCHEMA BREADBOARD WOWKI
-/Users/misustefan/Desktop/ROBOTICA/TEMA_1/assets/schema.png
+![SCHEMA SETUP FIZIC](/assets/schema.png)
