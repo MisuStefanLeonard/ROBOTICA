@@ -45,4 +45,4 @@
 
 ## SCHEMA BREADBOARD WOWKI
 
-[SCHEMA SETUP FIZIC](/assets/schema.png)
+![SCHEMA SETUP FIZIC](/assets/schema.png)
