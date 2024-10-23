@@ -1,9 +1,9 @@
 #include <Arduino.h>
 
-#define LED_GALBEN1 10
-#define LED_GALBEN2 9
-#define LED_ROSU1 8
-#define LED_ROSU2 7
+#define LED_ALBASTRU_2 10
+#define LED_GALBEN_2 9
+#define LED_GALBEN_1 8
+#define LED_ALBASTRU_1 7
 #define LED_VERDE_RGB 5
 #define LED_ALBASTRU_RGB 4
 #define LED_ROSU_RGB 6
@@ -32,9 +32,9 @@ void setup() {
 
   // Configurare pinii LED-urilor ca output
   pinMode(LED_GALBEN1, OUTPUT);
-  pinMode(LED_GALBEN2, OUTPUT);
-  pinMode(LED_ROSU1, OUTPUT);
-  pinMode(LED_ROSU2, OUTPUT);
+  pinMode(LED_GALBEN_2, OUTPUT);
+  pinMode(LED_GALBEN_1, OUTPUT);
+  pinMode(LED_ALBASTRU_1, OUTPUT);
   pinMode(LED_ROSU_RGB, OUTPUT);
   pinMode(LED_VERDE_RGB, OUTPUT);
   pinMode(LED_ALBASTRU_RGB, OUTPUT);
@@ -83,7 +83,7 @@ void pornireIncarcare() {
   // Animație de încărcare continuă
   for (int j = 0; j < 4; j++) {
     for (int i = 0; i < 2; i++) {
-      digitalWrite(LED_GALBEN1 - j, HIGH);
+      digitalWrite(LED_ALBASTRU_2 - j, HIGH);
       // Blink non-blocant folosind millis()
       while (millis() - timpUltimBlink < intervalBlink) {
         verificaButonStop(); // Verifică dacă butonul stop este apăsat și menținut
@@ -91,7 +91,7 @@ void pornireIncarcare() {
       }
 
       timpUltimBlink = millis(); // Actualizare timp ultim blink
-      digitalWrite(LED_GALBEN1 - j, LOW);
+      digitalWrite(LED_ALBASTRU_2 - j, LOW);
 
       // Așteaptă din nou fără a bloca
       while (millis() - timpUltimBlink < intervalBlink) {
@@ -100,15 +100,15 @@ void pornireIncarcare() {
       }
 
       timpUltimBlink = millis(); 
-      digitalWrite(LED_GALBEN1 - j, HIGH);
+      digitalWrite(LED_ALBASTRU_2 - j, HIGH);
     }
   }
 
   // Oprește toate LED-urile
   digitalWrite(LED_GALBEN1, LOW);
-  digitalWrite(LED_GALBEN2, LOW);
-  digitalWrite(LED_ROSU1, LOW);
-  digitalWrite(LED_ROSU2, LOW);
+  digitalWrite(LED_GALBEN_2, LOW);
+  digitalWrite(LED_GALBEN_1, LOW);
+  digitalWrite(LED_ALBASTRU_1, LOW);
 
   // Blink pentru toate LED-urile de 3 ori
   for (int i = 0; i < 3; i++) {
@@ -119,9 +119,9 @@ void pornireIncarcare() {
 
     timpUltimBlink = millis(); 
     digitalWrite(LED_GALBEN1, HIGH);
-    digitalWrite(LED_GALBEN2, HIGH);
-    digitalWrite(LED_ROSU1, HIGH);
-    digitalWrite(LED_ROSU2, HIGH);
+    digitalWrite(LED_GALBEN_2, HIGH);
+    digitalWrite(LED_GALBEN_1, HIGH);
+    digitalWrite(LED_ALBASTRU_1, HIGH);
 
     while (millis() - timpUltimBlink < intervalBlink) {
       verificaButonStop();
@@ -130,9 +130,9 @@ void pornireIncarcare() {
 
     timpUltimBlink = millis(); 
     digitalWrite(LED_GALBEN1, LOW);
-    digitalWrite(LED_GALBEN2, LOW);
-    digitalWrite(LED_ROSU1, LOW);
-    digitalWrite(LED_ROSU2, LOW);
+    digitalWrite(LED_GALBEN_2, LOW);
+    digitalWrite(LED_GALBEN_1, LOW);
+    digitalWrite(LED_ALBASTRU_1, LOW);
   }
 
   // Setează LED-ul RGB la verde
@@ -165,22 +165,22 @@ void verificaButonStop() {
 void oprireIncarcare() {
   incarcareInDesfasurare = false; 
   digitalWrite(LED_GALBEN1, LOW);
-  digitalWrite(LED_GALBEN2, LOW);
-  digitalWrite(LED_ROSU1, LOW);
-  digitalWrite(LED_ROSU2, LOW);
+  digitalWrite(LED_GALBEN_2, LOW);
+  digitalWrite(LED_GALBEN_1, LOW);
+  digitalWrite(LED_ALBASTRU_1, LOW);
 
   // Blink pentru toate LED-urile de 3 ori
   for (int i = 0; i < 3; i++) {
     delay(750);
     digitalWrite(LED_GALBEN1, HIGH);
-    digitalWrite(LED_GALBEN2, HIGH);
-    digitalWrite(LED_ROSU1, HIGH);
-    digitalWrite(LED_ROSU2, HIGH);
+    digitalWrite(LED_GALBEN_2, HIGH);
+    digitalWrite(LED_GALBEN_1, HIGH);
+    digitalWrite(LED_ALBASTRU_1, HIGH);
     delay(750);
     digitalWrite(LED_GALBEN1, LOW);
-    digitalWrite(LED_GALBEN2, LOW);
-    digitalWrite(LED_ROSU1, LOW);
-    digitalWrite(LED_ROSU2, LOW);
+    digitalWrite(LED_GALBEN_2, LOW);
+    digitalWrite(LED_GALBEN_1, LOW);
+    digitalWrite(LED_ALBASTRU_1, LOW);
   }
 
   // Setează LED-ul RGB la verde
