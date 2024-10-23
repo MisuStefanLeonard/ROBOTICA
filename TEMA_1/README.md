@@ -35,6 +35,7 @@
 ### 1x LED RGB
 
 ## Schema setup fizic
+
 ![PRIMA POZA](/assets/IMG_7860.HEIC)
 ![A DOUA POZA](/assets/IMG_7861.HEIC)
 
@@ -43,4 +44,5 @@
 ### LINK : https://youtube.com/shorts/gYVs_Wss-xI?feature=share
 
 ## SCHEMA BREADBOARD WOWKI
+
 ![SCHEMA SETUP FIZIC](/assets/schema.png)
