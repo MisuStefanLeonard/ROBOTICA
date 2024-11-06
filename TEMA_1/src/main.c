@@ -20,6 +20,7 @@ unsigned long momentApasareStop = 0;  // Momentul în care a fost apăsat butonu
 bool butonStopApasatLung = false;     // Indică dacă butonul stop a fost apăsat mai mult de 1 secundă
 unsigned long timpUltimBlink = 0;     // Timp pentru a gestiona intervalele de blink
 
+
 // Declarații funcții
 void pornireIncarcare();
 void oprireIncarcare();
@@ -31,7 +32,7 @@ void setup() {
   pinMode(BUTON_STOP, INPUT_PULLUP);
 
   // Configurare pinii LED-urilor ca output
-  pinMode(LED_GALBEN1, OUTPUT);
+  pinMode(LED_GALBEN_1, OUTPUT);
   pinMode(LED_GALBEN_2, OUTPUT);
   pinMode(LED_GALBEN_1, OUTPUT);
   pinMode(LED_ALBASTRU_1, OUTPUT);
@@ -53,7 +54,7 @@ void loop() {
   if (citire != stareUltimButon) {
     ultimaDebounce = millis(); // Resetare temporizator debounce
   }
-
+  // 00010011
   // Așteaptă timpul de debounce și confirmă schimbarea stării
   if ((millis() - ultimaDebounce) > delayDebounce) {
     if (citire != stareButonCurenta) {
@@ -105,7 +106,7 @@ void pornireIncarcare() {
   }
 
   // Oprește toate LED-urile
-  digitalWrite(LED_GALBEN1, LOW);
+  digitalWrite(LED_ALBASTRU_2, LOW);
   digitalWrite(LED_GALBEN_2, LOW);
   digitalWrite(LED_GALBEN_1, LOW);
   digitalWrite(LED_ALBASTRU_1, LOW);
@@ -118,7 +119,7 @@ void pornireIncarcare() {
     }
 
     timpUltimBlink = millis(); 
-    digitalWrite(LED_GALBEN1, HIGH);
+    digitalWrite(LED_ALBASTRU_2, HIGH);
     digitalWrite(LED_GALBEN_2, HIGH);
     digitalWrite(LED_GALBEN_1, HIGH);
     digitalWrite(LED_ALBASTRU_1, HIGH);
@@ -129,7 +130,7 @@ void pornireIncarcare() {
     }
 
     timpUltimBlink = millis(); 
-    digitalWrite(LED_GALBEN1, LOW);
+    digitalWrite(LED_ALBASTRU_2, LOW);
     digitalWrite(LED_GALBEN_2, LOW);
     digitalWrite(LED_GALBEN_1, LOW);
     digitalWrite(LED_ALBASTRU_1, LOW);
@@ -164,20 +165,20 @@ void verificaButonStop() {
 
 void oprireIncarcare() {
   incarcareInDesfasurare = false; 
-  digitalWrite(LED_GALBEN1, LOW);
+  digitalWrite(LED_ALBASTRU_2, LOW);
+  digitalWrite(LED_ALBASTRU_1, LOW);
   digitalWrite(LED_GALBEN_2, LOW);
   digitalWrite(LED_GALBEN_1, LOW);
-  digitalWrite(LED_ALBASTRU_1, LOW);
 
   // Blink pentru toate LED-urile de 3 ori
   for (int i = 0; i < 3; i++) {
     delay(750);
-    digitalWrite(LED_GALBEN1, HIGH);
+    digitalWrite(LED_ALBASTRU_2, HIGH);
     digitalWrite(LED_GALBEN_2, HIGH);
     digitalWrite(LED_GALBEN_1, HIGH);
     digitalWrite(LED_ALBASTRU_1, HIGH);
     delay(750);
-    digitalWrite(LED_GALBEN1, LOW);
+    digitalWrite(LED_ALBASTRU_2, LOW);
     digitalWrite(LED_GALBEN_2, LOW);
     digitalWrite(LED_GALBEN_1, LOW);
     digitalWrite(LED_ALBASTRU_1, LOW);
