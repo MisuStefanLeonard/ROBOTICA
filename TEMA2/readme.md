@@ -112,4 +112,4 @@ Proiectul simulează un joc de tip TypeRacer pe platforma Arduino, în care util
 
 ### Video Funcționare
 
-- **Demonstrație video a funcționării**: [Link către video](https://youtube.com/shorts/gYVs_Wss-xI?feature=share)
+- **Demonstrație video a funcționării**: [Link către video](https://youtu.be/i7L5zVrccJU)
