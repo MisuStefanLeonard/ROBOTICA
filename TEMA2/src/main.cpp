@@ -10,7 +10,7 @@ void ledColor(int red, int green, int blue){
 
 void stopRound() {
   Serial.println("Runda s-a terminat!");
-  Serial.print("Ai nimerit ");
+  Serial.print("Ai scris ");
   Serial.print(pointsCount);
   Serial.println(" cuvinte corecte!");
   ledColor(0, 255, 0); 
@@ -76,6 +76,7 @@ void execRound() {
 
       if (Serial.available() > 0) {
         char receivedChar = Serial.read();
+        Serial.print(receivedChar);
         if (receivedChar != -1) { 
           if (receivedChar == '\b' && inputWord.length() > 0) {
             inputWord.remove(inputWord.length() - 1);
@@ -110,7 +111,7 @@ void startRound(){
     Serial.println(countdownValue);
     countdownValue--; 
     countdownStartTime = millis(); 
-
+    ledColor(255,255,255);
     if (countdownValue <= 0) {
       Serial.println("Jocul a inceput!");
       countdownActive = false; 
